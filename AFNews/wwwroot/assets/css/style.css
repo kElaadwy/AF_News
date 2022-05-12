@@ -1,9 +1,3 @@
-/**
-* Template Name: Medicio - v4.7.0
-* Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -417,8 +411,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 #hero p {
-  margin: 0 auto 30px auto;
-  color: white;
+    margin: 0 auto 30px auto;
+    color: white;
+    font-size: 36px;
 }
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
@@ -651,11 +646,12 @@ section {
   margin-bottom: 15px;
   font-size: 18px;
 }
-.featured-services .title a {
-  color: #111;
-}
+    .featured-services .title a {
+        color: #111;
+        font-size: 28px;
+    }
 .featured-services .description {
-  font-size: 15px;
+  font-size: 25px;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -1012,7 +1008,7 @@ section {
 }
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  min-height: 120px;
 }
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
@@ -1023,13 +1019,13 @@ section {
   border: 6px solid #fff;
 }
 .testimonials .testimonial-item h3 {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
   color: #111;
 }
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
+  font-size: 24px;
   color: #999;
   margin: 0 0 0 45px;
 }
