@@ -50,8 +50,8 @@ namespace AFNews.Controllers
 
         public IActionResult News(int id)
         {
-            var news = db.News.Where(x => x.categoryId == id).ToList();
-
+            var news = db.News.Where(x => x.categoryId == id).OrderByDescending(y => y.Date).ToList();
+            ViewData["title"] = db.Categories.Find(id).Name;
             return View(news);
         }
 

@@ -1,2 +1,25 @@
-﻿
-<h3>news</h3>
+﻿@model List<News>
+<section class="about">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2> اخبار @ViewData["title"]  </h2>
+            <p>العربي فرحان</p>
+        </div>
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right">
+                    <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
+                    <h3>@item.Title</h3>
+                    <h4>@item.Date</h4>
+                    <p class="fst-italic">
+                        @item.Topic
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
